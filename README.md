@@ -1,4 +1,6 @@
-
+小白git用户点击：http://www.jianshu.com/p/85cb197cb125  参考这个一起开发
+代码是来自于csdn 雷霄骅，在他的代码基础上做一些修改等
+如果有侵犯权利请与作者联系
 # ffmpeg
 学习ffmpeg 
 ffmpe-3.2.4
@@ -16,3 +18,4 @@ code
 	my_sdl2/          将yuv文件中yuv420p的数据显示到屏幕上
 	my_decoder_sdl/   将my_decoder和my_sdl合并使用
 	my_totoal/       
+
