@@ -1,0 +1,16 @@
+
+用户abc，def ， 2人协同在github上开发项目
+
+1、abc用户在自己的github上新建了项目
+2、abc在项目的settings里面——》Collaborators——》找到def用户名称-->然后把连接地址拷贝出来发给def
+3、def得到连接地址后，点击确认，就可以共同开发了
+	小白git用户点击：http://www.jianshu.com/p/85cb197cb125  参考这个一起开发
+
+1、把github上的代码下载到本地：
+	git clone https://github.com/tiantang46800/ffmpeg.git
+2、代码提交
+	git add .
+	git commit
+	git pull
+2、解决多人开发的冲突问题
+
