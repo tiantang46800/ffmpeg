@@ -1,0 +1,37 @@
+
+用户abc，def ， 2人协同在github上开发项目
+
+1、abc用户在自己的github上新建了项目
+2、abc在项目的settings里面——》Collaborators——》找到def用户名称-->然后把连接地址拷贝出来发给def
+3、def得到连接地址后，点击确认，就可以共同开发了
+	小白git用户点击：http://www.jianshu.com/p/85cb197cb125  参考这个一起开发
+	http://www.liaoxuefeng.com/
+1、把github上的代码下载到本地：
+	adc,def全部执行如下代码，得到一模一样的数据
+	git clone https://github.com/tiantang46800/ffmpeg.git
+2、代码提交
+	def用户修改了一个文件后
+	git add .
+	git commit （本地提交）
+	git branch -a(查看各个分支版本)
+		liu@liu-Lenovo-V3000:~/ffmpeg/tools/test_code/ffmpeg$ git branch -a
+		* master 本地分支
+		  remotes/origin/HEAD -> origin/master
+		  remotes/origin/master
+	git push -u origin master(推送，提交给远程服务器，origin代表远程，master本地默认分支)
+	补充命令：更细化
+	liu@liu-Lenovo-V3000:~/ffmpeg/tools/test_code/ffmpeg$ git remote （知道自己对应的远程是哪个分支）
+	origin
+	liu@liu-Lenovo-V3000:~/ffmpeg/tools/test_code/ffmpeg$ git remote -v
+	origin	https://github.com/tiantang46800/ffmpeg.git (fetch)
+	origin	https://github.com/tiantang46800/ffmpeg.git (push)没有推送权限，看不到这行
+
+
+3、协作者只看代码
+	在2的前提下，abc用户没有修改任何的情况下，提取最新的数据
+	git pull（根新最新的数据下来）
+2、解决多人开发的冲突问题
+	在github上维护2个版本，master和dev，dev用来开发，master用来做大版本发布
+	每一个开发者本地需要有dev分支，开发好了后就直接推送远程的dev分支
+	远程的dev合并到远程的master需要专门人来完成
+
