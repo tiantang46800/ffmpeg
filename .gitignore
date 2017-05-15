@@ -30,4 +30,11 @@
 
 # Debug files
 *.dSYM/
-*.su
+*.su 
+
+
+*.yuv
+*.mp3
+*.ts
+*.mp4
+*.h264
